@@ -4,26 +4,45 @@ created on: Mar 3, 2025
 
 turns an LED on for one second, then off for one second, repeatedly.
 */
+const int PIN_11 = 11;
+const int PIN_12 = 12;
+const int PIN_13 = 13;
 
 void setup()
 {
-    pinMode(11, OUTPUT) ;
-    pinMode(12, OUTPUT) ;
-    pinMode(13, OUTPUT) ;
+    pinMode(PIN_11, OUTPUT) ;
+    pinMode(PIN_12, OUTPUT) ;
+    pinMode(PIN_13, OUTPUT) ;
 }
 
 void loop()
 {
-    digitalWrite(11,HIGH) ;
-    digitalWrite(12,LOW) ;
-    digitalWrite(13,LOW) ;
+    digitalWrite(PIN_11,HIGH) ;
+    digitalWrite(PIN_12,LOW) ;
+    digitalWrite(PIN_13,LOW) ;
     delay(1000) ; //wait for 1000 milliseconds
-    digitalWrite(11,LOW) ;
-    digitalWrite(12,HIGH) ;
-    digitalWrite(13,LOW) ;
+    digitalWrite(PIN_11,LOW) ;
+    digitalWrite(PIN_12,HIGH) ;
+    digitalWrite(PIN_13,LOW) ;
     delay(1000) ; //wait for 1000 milliseconds
-    digitalWrite(11,LOW) ;
-    digitalWrite(12,LOW) ;
-    digitalWrite(13,HIGH) ;
+    digitalWrite(PIN_11,LOW) ;
+    digitalWrite(PIN_12,LOW) ;
+    digitalWrite(PIN_13,HIGH) ;
+    delay(1000) ; //wait for 1000 milliseconds
+    digitalWrite(PIN_11,HIGH) ;
+    digitalWrite(PIN_12,HIGH) ;
+    digitalWrite(PIN_13,LOW) ;
+    delay(1000) ; //wait for 1000 milliseconds
+    digitalWrite(PIN_11,LOW) ;
+    digitalWrite(PIN_12,HIGH) ;
+    digitalWrite(PIN_13,HIGH) ;
+    delay(1000) ; //wait for 1000 milliseconds
+    digitalWrite(PIN_11,HIGH) ;
+    digitalWrite(PIN_12,LOW) ;
+    digitalWrite(PIN_13,HIGH) ;
+    delay(1000) ; //wait for 1000 milliseconds
+    digitalWrite(PIN_11,LOW) ;
+    digitalWrite(PIN_12,LOW) ;
+    digitalWrite(PIN_13,LOW) ;
     delay(1000) ; //wait for 1000 milliseconds
 }
